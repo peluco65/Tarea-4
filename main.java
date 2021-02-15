@@ -29,19 +29,17 @@ public class main {
 
         }
 
-        try
+        try {
 
-        {
+                    System.out.println(" Modificación 1");
 
-            System.out.println("Debes recargar monedero");
+                    mimonedero.recargar(200);
 
-            mimonedero.recargar(300);
+                 } catch (Exception e) {
 
-        } catch (Exception e)
+                           System.out.print("Ha fallado la recarga");
 
-        {
-
-            System.out.print("Error al recargar");
+                            }
 
         }
 
@@ -49,5 +47,7 @@ public class main {
 
         System.out.println("El efectivo del monedero es  "+ saldo_disponible );
 	}
+	
+	
 	}
 
